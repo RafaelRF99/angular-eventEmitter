@@ -1,0 +1,14 @@
+<form [formGroup]="form">
+    <mat-form-field appearance="outline">
+        <mat-label>Login</mat-label>
+        <input matInput type="text" formControlName="login">
+        <mat-error *ngIf="form.get('login')?.errors?.['required']">*Campo obrigatório</mat-error>
+        <mat-error *ngIf="form.get('login')?.errors?.['minlength']">*Campo 4 caracteres minímos</mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Senha</mat-label>
+        <input matInput type="text" formControlName="senha">
+        <mat-error *ngIf="form.get('senha')?.errors?.['required']">*Campo obrigatório</mat-error>
+    </mat-form-field>
+    <button (click)="infor()">ENVIAR</button>
+</form>

@@ -1,0 +1,12 @@
+.btn {
+    padding: .5rem 2rem;
+    border: none;
+    border-radius: .5rem;
+    box-shadow: 5px 5px 10px #0005;
+
+    &:hover {
+        scale: 1.1;
+        
+        cursor: pointer;
+    }
+}
